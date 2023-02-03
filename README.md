@@ -6,7 +6,7 @@ This is simple GUI python antivirus
 Download and use!
 
 ```bash
-https://github.com/chfncghn/Python-Antivirus
+git clone https://github.com/chfncghn/Python-Antivirus
 ```
 ```bash
 python3 Antivirus.py
