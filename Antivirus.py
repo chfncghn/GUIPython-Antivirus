@@ -10,18 +10,18 @@ class AntivirusGUI(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Antivirus")
-        self.geometry("400x200")
+        self.geometry("800x400")
 
         self.scan_result = tk.StringVar()
-        self.scan_result.set("No file selected for scanning.")
+        self.scan_result.set("MESET Antivirus- No file selected for scanning.")
 
         self.label = tk.Label(textvariable=self.scan_result)
         self.label.pack(pady=10)
 
-        self.file_button = tk.Button(text="Select file", command=self.select_file)
+        self.file_button = tk.Button(text="Select a file", command=self.select_file)
         self.file_button.pack()
 
-        self.scan_button = tk.Button(text="Scan", command=self.scan)
+        self.scan_button = tk.Button(text="Scan the file", command=self.scan)
         self.scan_button.pack(pady=10)
 
     def select_file(self):
@@ -36,10 +36,10 @@ class AntivirusGUI(tk.Tk):
 
         if sha256_hash in KNOWN_THREATS:
             self.scan_result.set(f"Threat detected: {self.file_path}")
-            messagebox.showwarning("Threat detected", "This file has been identified as a known threat.")
+            messagebox.showwarning("MESET Antivirus- Threat detected", "This file has been identified as a known threat.")
         else:
             self.scan_result.set(f"File is safe: {self.file_path}")
-            messagebox.showinfo("Safe file", "This file has been identified as safe.")
+            messagebox.showinfo("MESET Antivirus- Safe file", "This file has been identified as safe.")
 
 
 if __name__ == '__main__':
