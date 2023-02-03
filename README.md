@@ -10,6 +10,7 @@ https://github.com/chfncghn/Python-Antivirus
 ```
 ```bash
 python3 antivirus.py
+```
 
 
 
