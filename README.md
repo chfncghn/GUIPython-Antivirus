@@ -9,7 +9,7 @@ Download and use!
 https://github.com/chfncghn/Python-Antivirus
 ```
 ```bash
-python3 antivirus.py
+python3 Antivirus.py
 ```
 
 
