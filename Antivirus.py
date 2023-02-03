@@ -9,7 +9,7 @@ import tkinter as tk
 class AntivirusGUI(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Antivirus")
+        self.title("MESET Antivirus")
         self.geometry("800x400")
 
         self.scan_result = tk.StringVar()
