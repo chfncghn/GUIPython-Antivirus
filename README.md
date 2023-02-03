@@ -8,6 +8,9 @@ Download and use!
 ```bash
 git clone https://github.com/chfncghn/Python-Antivirus
 ```
+```bash 
+cd Python-Antivirus
+```
 ```bash
 python3 Antivirus.py
 ```
