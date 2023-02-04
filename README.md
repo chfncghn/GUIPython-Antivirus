@@ -15,7 +15,7 @@ cd Python-Antivirus
 python3 Antivirus.py
 ```
 For testing you can scan the file Trojan.exe but beware the code is a real python virus
-Python.py is a python virus ```link click here``` to view the full file
+Python.py is a python virus go to (https://github.com/chfncghn/Agent-1) you can view the full source code
 
 
 
