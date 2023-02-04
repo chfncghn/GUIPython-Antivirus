@@ -36,11 +36,17 @@ class AntivirusGUI(tk.Tk):
 
         if sha256_hash in KNOWN_THREATS:
             self.scan_result.set(f"Threat detected: {self.file_path}")
-            messagebox.showwarning("MESET Antivirus- Threat detected", "This file has been identified as a known threat.")
+            answer = messagebox.askyesno("MESET Antivirus- Threat detected", "This file has been identified as a known threat. Do you want to delete it?")
+            if answer:
+                os.remove(self.file_path)
+                self.scan_result.set(f"File deleted: {self.file_path}")
+                messagebox.showinfo("MESET Antivirus- File deleted", "The file has been successfully deleted.")
+            else:
+                self.scan_result.set(f"File not deleted: {self.file_path}")
+                messagebox.showinfo("MESET Antivirus- File not deleted", "The file has not been deleted.")
         else:
             self.scan_result.set(f"File is safe: {self.file_path}")
             messagebox.showinfo("MESET Antivirus- Safe file", "This file has been identified as safe.")
-
 
 if __name__ == '__main__':
     # List of known threat hashes
