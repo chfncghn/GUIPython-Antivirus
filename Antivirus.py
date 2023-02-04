@@ -45,6 +45,7 @@ class AntivirusGUI(tk.Tk):
 if __name__ == '__main__':
     # List of known threat hashes
     KNOWN_THREATS = [
+        "eeabc51399265b0c04db38d9a88f9db6e0c93e55fc4cfda03d94de14b077abf1",
         "11b48eb87a0f7c12085b14d2a8f23c5b0a9e9dbb3476d0b59dd5c18aad30e1c3",
         "e029c467d77a5dacff64a8a4b6af5a2aa33199eb8cf35c79f5563345fe3c307f",
         "5f2a3e3c3e5b80f70a18a7a93bce06dfd2b2a1a8820acb17e9f33e7afb63eb12",
