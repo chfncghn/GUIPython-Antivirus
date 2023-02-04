@@ -14,6 +14,7 @@ cd Python-Antivirus
 ```bash
 python3 Antivirus.py
 ```
+For testing you can scan the file Trojan.exe but beware the code is a real python virus
 
 
 
